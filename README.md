@@ -15,7 +15,8 @@
   wget https://download.fedoraproject.org/pub/fedora-secondary/releases/$RELEASE/Spins/aarch64/images/$IMAGE.aarch64.raw.xz
   wget https://raw.githubusercontent.com/KizzyCode/well_known_id_rsa/master/well_known_id_rsa.pub
   ```
-    - See also https://github.com/KizzyCode/well_known_id_rsa for more information
+    - __⚠️ Important: ⚠️__ We deploy the [well_known_id_rsa public key](https://github.com/KizzyCode/well_known_id_rsa) for `root`;
+      so be aware that you remove this key from `/root/.ssh/authorized_keys` during deployment/setup
 
 - Create and attach 8 GiB working image:
     ```sh

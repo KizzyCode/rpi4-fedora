@@ -18,13 +18,13 @@
     - __⚠️ Important: ⚠️__ We deploy the [well_known_id_rsa public key](https://github.com/KizzyCode/well_known_id_rsa) for `root`;
       so be aware that you remove this key from `/root/.ssh/authorized_keys` during deployment/setup
 
-- Create and attach 8 GiB working image:
+- Create and attach an 8 GiB working image:
     ```sh
     dd if=/dev/zero bs=1M count=8192 | speed > $IMAGE.rpi4.img
     sudo losetup -f $IMAGE.rpi4.img && losetup -l
     ```
 
-- Create image (where `loop0` must be replaced with the real loop device from the step above):
+- Create the image (where `loop0` must be replaced with the real loop device from the step above):
     ```sh
     export LOOP=/dev/loop0
     sudo arm-image-installer --target=rpi4 \

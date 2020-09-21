@@ -33,7 +33,8 @@
     sudo losetup -d $LOOP
     ```
 
-- Login as root via SSH using the [well_known_id_rsa key](https://github.com/KizzyCode/well_known_id_rsa)
+- Wait up to 10 minutes for the initial setup after powering the RasPi and login as root via SSH
+  using the [well_known_id_rsa key](https://github.com/KizzyCode/well_known_id_rsa)
 
 - [Optional] Create an xz-compressed template from the image:
     ```sh

@@ -11,7 +11,9 @@
 
 - Define the base image and download components:
   ```sh
-  export RELEASE=32; export IMAGE=Fedora-Minimal-32-1.6
+  export RELEASE=33
+  export IMAGE=Fedora-Minimal-33-1.3
+  
   wget https://download.fedoraproject.org/pub/fedora-secondary/releases/$RELEASE/Spins/aarch64/images/$IMAGE.aarch64.raw.xz
   wget https://raw.githubusercontent.com/KizzyCode/well_known_id_rsa/master/well_known_id_rsa.pub
   ```
